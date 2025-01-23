@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Registration Foam</h1>
+    <p>current theme <span id="theme-display">light</span></p>
+    <input type="Name " placeholder="yourname" />
+    <input type="Cityname " placeholder="cityname" />
+
+    <button id="theme-btn" onclick="toggletheme()">submit</button>
+    <!--linking js file-->
+
+    <div class="form container">
+      <h1>weather checker</h1>
+       <form id="weatherform" onsubmit="getweatherdetail(); return false;">
+        <label for="city">enter city name :</label>
+        <input type="text" id="city" name="city" required />
+        <button type="submit ">submit</button>
+      </form>
+      <div id="result" class="result" style="display: none">
+        <h2>weather result</h2>
+        <p id="weather info"></p>
+
+        <button type="submit ">submit</button>
+      </div>
+    </div>
+    
+    <script src="foam.js"></script>
+    
+  </body>
+</html>
